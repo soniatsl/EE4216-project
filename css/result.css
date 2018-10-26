@@ -12,7 +12,7 @@ body{
 .result_middle{
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .result_title{
     margin-left: 5%;
@@ -31,9 +31,35 @@ body{
     margin-top: 15px;
 }
 .result_box_item{
-    border: 1px solid black;
+    background: rgb(218, 173, 122);
     height: 9%;
     width: 80%;
     margin: 0px auto;
     margin-bottom: 5px;
+    border-radius: 10px;
+}
+.result_box_item.first, .result_box_item.second, .result_box_item.third{
+    height: 12%;
+}
+.result_box_item.first{
+    background: rgb(106, 230, 112);
+}
+.result_box_item.second{
+    background: rgb(255, 137, 101);
+}
+.result_box_item.third{
+    background: rgb(113, 190, 241);
+}
+.result_rank{
+    width: 10%;
+    height: 95%;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: rgb(190, 140, 0);
+}
+.result_rank.win{
+    font-size: 50px;
+    color: black;
 }

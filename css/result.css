@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url("../assets/background_result.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+.result_middle{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 100px;
+}
+.result_title{
+    margin-left: 5%;
+    color: white;
+    font-size: 55px;
+}
+.result_rates{
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+.result_boxes{
+    height: 75%;
+    margin-top: 15px;
+}
+.result_box_item{
+    border: 1px solid black;
+    height: 9%;
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 5px;
+}

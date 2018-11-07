@@ -37,12 +37,15 @@ body{
     margin: 0px auto;
     margin-bottom: 5px;
     border-radius: 10px;
+    min-width: 280px;
+    min-height: 60px;
+
 }
 .result_box_item.first, .result_box_item.second, .result_box_item.third{
     height: 12%;
 }
 .result_box_item.first{
-    background: rgb(106, 230, 112);
+    background: rgb(255, 252, 105);
 }
 .result_box_item.second{
     background: rgb(255, 137, 101);
@@ -58,8 +61,108 @@ body{
     margin-left: 10px;
     font-weight: bold;
     color: rgb(190, 140, 0);
+    float: left;
+    font-size: 2.5vw;
 }
 .result_rank.win{
     font-size: 50px;
     color: black;
+    font-size: 3.5vw;
+}
+.result_bank_image, .result_location_image{
+    float: left;
+    margin-top: 20px;
+    width: 5%;    
+    height: 5%;
+    margin-left: 7px;
+}
+.result_bank_name{
+    float: left;
+    margin-top: 10px;
+    width: 30%;
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(95, 95, 95);
+}
+.result_rate_block{
+    float: left;
+    width: 35%;
+    height: 80%;
+    margin-top: 10px;
+}
+.result_rate_buy, .result_rate_sell{
+    width: 50%;
+    height: 100%;
+    background: rgb(68, 172, 59);
+    float: left;
+    font-size: 1.7vw;
+    padding-left: 5px;
+    font-weight: bold;
+    color: rgb(167, 238, 167);
+}
+.result_rate_sell{
+    background: rgb(255, 110, 110);
+    color: rgb(255, 206, 206);
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.result_buy_value, .result_sell_value{
+    text-align: center;
+    color: rgb(255, 255, 199);
+    margin-top: 10px;
+}
+.result_location{
+    width: 15%;
+    height: 95%;
+    float: right;
+    margin-right: 12px;
+}
+.result_location_image{
+    margin-top: 15px;
+    width: 35%;
+    height: 35%;
+    float: left;
+}
+.result_location_value{
+    float: left;
+    font-size: 1.7vw;
+    margin-top: 30px;
+    color: rgb(95, 95, 95);
+}
+.result_bank_image.lose{
+    width:4%;
+    height: 4%;
+    margin-top: 13px;
+    margin-left: 10px;
+}
+.result_bank_name.lose{
+    font-size: 1.5vw;
+}
+.result_rate_block.lose{
+    margin-left: 7px;
+    margin-top: 7px;
+}
+.result_rate_buy.lose, .result_rate_sell.lose{
+    font-size: 1.4vw;
+    background: rgb(255, 174, 0);
+    color: rgb(255, 227, 167);
+}
+.result_sell_value.lose, .result_buy_value.lose{
+    margin-top: 0px;
+    color: rgb(255, 227, 167);
+}
+.result_location.lose{
+    margin-right: 3px;
+}
+.result_location_image.lose{
+    margin-top: 10px;
+    width: 30%;
+    height: 30%;
+}
+.result_location_value.lose{
+    font-size: 1.5vw;
+    color: rgb(95, 95, 95);
+    margin-top: 20px;
 }

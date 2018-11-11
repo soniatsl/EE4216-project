@@ -23,6 +23,7 @@ body{
     margin-top: 5%;
     /* border: solid black 1px; */
     height: 40%;
+    min-width: 500px;
 }
 .index_box_item{
     position: relative;
@@ -68,11 +69,15 @@ body{
     width: 130%;
     height: 20px;
 }
+.index_bottom{
+    min-width: 500px;
+}
 .index_more_options{
     text-decoration: underline;
     text-align: center;
     margin: 0 auto;    
     width: 100px;
+    color: rgb(255, 95, 95);
 }
 .index_more_options:hover{
     cursor: pointer;
@@ -91,8 +96,14 @@ body{
 }
 .index_view_now:hover{
     cursor: pointer;
-    background: rgb(255, 73, 49);
+    background: rgb(255, 30, 0);
 }
 .index_view_link{
     text-decoration: none;
+}
+.index_boxes.additional{
+    margin-top: 0px;
+}
+.index_boxes.additional.hide{
+    display: none;
 }

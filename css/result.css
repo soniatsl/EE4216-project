@@ -12,7 +12,7 @@ body{
 .result_middle{
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .result_title{
     margin-left: 5%;
@@ -27,19 +27,19 @@ body{
     font-size: 20px;
 }
 .result_boxes{
-    height: 75%;
+    /* height: 75%; */
     margin-top: 15px;
 }
 .result_box_item{
     background: rgb(218, 173, 122);
-    height: 9%;
     width: 80%;
     margin: 0px auto;
     margin-bottom: 5px;
     border-radius: 10px;
     min-width: 280px;
     min-height: 60px;
-
+    display: table;
+    overflow: auto;
 }
 .result_box_item.first, .result_box_item.second, .result_box_item.third{
     height: 12%;
@@ -72,30 +72,44 @@ body{
 .result_bank_image, .result_location_image{
     float: left;
     margin-top: 20px;
-    width: 5%;    
-    height: 5%;
+    width: 5%;
+    height: 85%;
     margin-left: 7px;
+    margin-right: 10px;
 }
 .result_bank_name{
     float: left;
     margin-top: 10px;
-    width: 30%;
+    width: 25%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1.8vw;
     color: rgb(95, 95, 95);
+}
+.result_rate_details{
+    width: 480px;
+    min-width: 480px;
+    height: 60%;
+    float: left;
+    display: table-row;
+    max-height: 85px;
+    margin-top: 10px;
+}
+.result_rate_details.lose{
+    margin-top: 0;
 }
 .result_rate_block{
     float: left;
-    width: 35%;
-    height: 80%;
-    margin-top: 10px;
+    width: 60%;
+    height: 85%;
+    min-height: 65px;
+    margin-bottom: 2px;
 }
 .result_rate_buy, .result_rate_sell{
     width: 50%;
     height: 100%;
     background: rgb(68, 172, 59);
     float: left;
-    font-size: 1.7vw;
+    font-size: calc(10px + 1vw);
     padding-left: 5px;
     font-weight: bold;
     color: rgb(167, 238, 167);
@@ -111,23 +125,22 @@ img{
 .result_buy_value, .result_sell_value{
     text-align: center;
     color: rgb(255, 255, 199);
-    margin-top: 10px;
+    margin-top: 2%;
 }
 .result_location{
-    width: 15%;
-    height: 95%;
     float: right;
-    margin-right: 12px;
+    margin-right: 3%;
+    width: 30%;
 }
 .result_location_image{
     margin-top: 15px;
-    width: 35%;
-    height: 35%;
+    width: 40px;
+    height: 40px;
     float: left;
 }
 .result_location_value{
     float: left;
-    font-size: 1.7vw;
+    font-size: calc(22px + .2vw);
     margin-top: 30px;
     color: rgb(95, 95, 95);
 }
@@ -143,26 +156,38 @@ img{
 .result_rate_block.lose{
     margin-left: 7px;
     margin-top: 7px;
+    min-height: 50px;
+    height: 65px;
 }
 .result_rate_buy.lose, .result_rate_sell.lose{
-    font-size: 1.4vw;
+    font-size: calc(18px + .2vw);
     background: rgb(255, 174, 0);
     color: rgb(255, 227, 167);
 }
 .result_sell_value.lose, .result_buy_value.lose{
-    margin-top: 0px;
+    margin-top: 10px;
     color: rgb(255, 227, 167);
 }
 .result_location.lose{
-    margin-right: 3px;
+    margin-right: 0;
 }
 .result_location_image.lose{
     margin-top: 10px;
-    width: 30%;
-    height: 30%;
+    width: 35px;
+    height: 35px;
 }
 .result_location_value.lose{
-    font-size: 1.5vw;
+    font-size: calc(18px + .2vw);
     color: rgb(95, 95, 95);
     margin-top: 20px;
+}
+.result_view_more{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 1vw;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+.result_view_more:hover{
+    cursor: pointer;
 }

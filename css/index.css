@@ -25,6 +25,11 @@ body{
     height: 40%;
     min-width: 500px;
 }
+.index_boxes_compulsory{
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+}
 .index_box_item{
     position: relative;
     float: left;
@@ -50,27 +55,36 @@ body{
 .index_box_item.three{
     background: rgb(100, 115, 202)
 }
+.index_box_item.compulsory{
+    width: 48%;
+    margin-right: 0;
+}
+.index_box_item.compulsory.two{
+    float: left;
+    margin-right: 3%;
+}
 .index_box_text{
     position: absolute;
     color: white;
     font-weight: bold;
     margin-left: 8%;
     margin-right: 8%;
-    font-size: 30px;
+    font-size: calc(20px + .8vw);
     margin-top: 10%;
 }
 .index_box_list{
-    position: absolute;
-    margin-left: 30%;
-    margin-right: 25%;
+    margin: 0 auto;
     margin-top: 250px;
+    width: 100px;
 }
 .boxes_values{
     width: 130%;
     height: 20px;
 }
 .index_bottom{
-    min-width: 500px;
+    min-width: 250px;
+    float: left;
+    width: 100%;
 }
 .index_more_options{
     text-decoration: underline;
@@ -106,4 +120,42 @@ body{
 }
 .index_boxes.additional.hide{
     display: none;
+}
+.index_amount{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.amount_input{
+    width: 100%;
+    height: 10%;
+    border: 1px solid rgb(128, 0, 0);
+    font-size: 20px;
+}
+.index_amount_number{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+}
+.index_amount_row{
+    border-bottom: 1px solid rgb(128, 0, 0);
+    height: 25%;
+}
+.index_amount_item{
+    float: left;
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    padding-top: 15px;
+    background: rgb(179, 0, 0);
+    color: white;
+}
+.index_amount_item.middle{
+    border-left: 1px solid rgb(128, 0, 0);
+    border-right: 1px solid rgb(128, 0, 0);
+    width: 34%;
+}
+.index_amount_item.zero{
+    width: 67%;
+    border-right: 1px solid rgb(128, 0, 0);
 }

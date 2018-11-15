@@ -27,3 +27,10 @@ class CurrencyAPI {
 }
 
 window.CurrencyAPI = CurrencyAPI;
+
+async function test() {
+    var curAPI = new CurrencyAPI("USD");
+    var result = await curAPI.fetchAll();
+    
+    var rateHSBC = result.HSBC;
+}

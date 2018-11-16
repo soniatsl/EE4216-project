@@ -49,7 +49,7 @@ class CurrencyAPI {
 
 window.CurrencyAPI = CurrencyAPI;
 
-test();
+// test();
 
 async function test() {
     var curAPI = new CurrencyAPI("USD");

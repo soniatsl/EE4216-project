@@ -1,0 +1,117 @@
+body{
+    background-image: url("../assets/background_result.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.header-container {
+    padding: 25px;
+    text-align: center;
+    color: #fefefe;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-item {
+    width: 650px;
+    max-width: 90%;
+    height: 65px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.content-item .overlay {
+    background: inherit;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.content-item .overlay:before {
+    content: " ";
+    background: inherit;
+    position: absolute;
+    z-index: 1;
+    left: -50px;
+    right: -50px;
+    top: -50px;
+    bottom: -50px;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.65);
+    filter: blur(12px);
+}
+
+.content-item .content {
+    color: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-item .rank {
+    color: #333;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.content-item .bank-name {
+    color: #333;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+}
+.content-item .rate {
+    color: #333;
+    width: 30%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+.content-item .location {
+    color: #333;
+    width: 20%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}

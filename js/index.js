@@ -21,11 +21,11 @@ $(document).ready(function () {
 
     });
 
-    $(".index_view_link").click(function() {
+    $(".currency-button").click(function() {
         var value = $(".amount_input").val();
         value = Number(value);
         if (isNaN(value)) return alert("Invalid value.");
-        var cur_code = $(".boxes_values").val();
+        var cur_code = $(this).attr("cur-code");
         var url = `result-new.html?cur_code=${cur_code}&value=${value}`;
         location.href = url;
     });

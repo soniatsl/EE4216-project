@@ -12,7 +12,7 @@ async function fetchData() {
     if (isNaN(value)) return console.error("Invalid value");
     var curAPI = new CurrencyAPI(cur_code);
     var result = await curAPI.fetchAll();
-
+    console.log(result);
     var resultantList = [];
     for (var bankName in result) {
         resultantList.push({
@@ -58,4 +58,14 @@ const LOOKUP_WEBSITE = {
     BOCHK: "https://www.bochk.com/whk/rates/exchangeRatesForCurrency/exchangeRatesForCurrency-input.action?lang=hk",
     HangSengBank: "https://www.hangseng.com/zh-hk/rates/foreign-currency-notes-exchange-rates/",
     HSBC: "https://www.personal.hsbc.com.hk/1/2/chinese/hk/investments/mkt-info/fcy",
+    CMBWingLung: "https://www.winglungbank.com/wlb_corporate/hk/personal/investments/financial-information/exchange-rates/notes-exchange-rates.html",
+    DBS: "https://hk.dbs.com/ecPortalWeb/Rates/ExchangeRate.aspx?Lang=zh-hk",
 };
+
+$("#closeBtn").click(function() {
+    $(".map-wrapper").hide();
+});
+
+$("#showMap").click(function() {
+    $(".map-wrapper").show();
+});

@@ -2,6 +2,7 @@
 
 <head>
     <title>Exchange Rate Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" id="style_page" type="text/css" href="css/result-new.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
@@ -13,11 +14,30 @@
         </div>
         <div class="content-container">
         </div>
+
+        <div id="map-container">
+            <input id='curPosBtn' type='button' value='Detect my current location'>
+            <select id='selectBank'>
+                <option disabled selected value> -- select a bank -- </option>
+                <option value='Hang Seng Bank'>Hang Seng</option>
+                <option value='HSBC'>HSBC</option>
+                <option value='BOCHK'>BOCHK</option>
+            </select>
+            <input id='searchBtn' type='button' value='Search nearby banks'>
+            <input id="pac-input" type="text" placeholder="Search your location here or click on the map">        
+            <div id="map"></div>        
+        </div>
+
+
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/api.js"></script>
     <script src="js/result-new.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIklAmlUQ_0VImSLOoenQJKCPowGZK-tQ&callback=initMap&libraries=places">
+    </script>
+    <script src="js/map.js"></script>
 </body>
 
 </html>
